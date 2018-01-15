@@ -38,3 +38,15 @@ for numbers in [even_x, odd_x]:
     for number in numbers:
         print(number,end=" ")
     print()
+
+# Value Unpacking
+years = [1990, 2017, 2018]
+year1, year2, year3 = years
+print(year1)
+
+years.append(1556)
+# This line will give error. Hence value unpacking is good for Tuple, immutable
+# Not for mutable list
+year1, year2, year3 = years
+
+

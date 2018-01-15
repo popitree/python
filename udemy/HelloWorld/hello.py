@@ -6,7 +6,7 @@ print('5\n')
 print("Python's string")
 print()
 print("Python\"s string")
-#Concat
+# Concat
 print("hello"+"world")
 name = "Indra"
 greeting = "Hello"
@@ -31,7 +31,7 @@ print(""" Triple quote no backslash worries
   """)
 
 age = 31
-#Error:
+# Error:
 # print(age + " helleo")
 
 
