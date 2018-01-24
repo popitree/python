@@ -19,7 +19,7 @@ print(a % b)
 for i in range(1,4):
     print(i)
 
-for i in range(1,a//b):  #a/b will give error as a/b gives float
+for i in range(1, a//b):  #a/b will give error as a/b gives float
     print(i)
 
 #When same operator precedence then evaluate from left to right

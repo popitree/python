@@ -45,3 +45,8 @@ indraData = eval(data)
 name, empId, projects = indraData
 print(projects[0])
 
+# mode tr => text read, t is by default.
+# b is for binary
+# r+b, w+b etc
+# x for exclusive creation, fail if file already exists
+
