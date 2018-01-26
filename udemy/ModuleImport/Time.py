@@ -55,5 +55,4 @@ for clock in ['clock', 'time', 'monotonic', 'perf_counter', 'process_time']:
     print(clock + "():\t\t\t", time.get_clock_info(clock))
 
 
-print(time.timezone, "---", time.tzname)
 
