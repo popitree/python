@@ -11,7 +11,7 @@ print(list_3)
 
 
 # Both will be sorted as both points to exact same list
-even = [2, 4 ,6, 8]
+even = [2, 4, 6, 8]
 even_1 = even
 # Both are same ('is' is for refernce equality)
 print(even_1 is even)

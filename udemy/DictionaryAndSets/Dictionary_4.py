@@ -14,3 +14,4 @@ print(veggies)
 
 nice_all = fruits.copy()
 
+
