@@ -1,4 +1,7 @@
 class Kettle(object):
+    # class attribute
+    # like static fields
+    power_source = "electricity"
 
     # Init is constructor
     def __init__(self, make, price):
@@ -38,12 +41,26 @@ print(hamilton.on)
 # Main diffrence is Method has "self"
 
 Kettle.switch_on(kenwood)
-print("Kenwood Status:"+str(kenwood.on))
+print("Kenwood Status:" + str(kenwood.on))
 
-print("*"*80)
+print("*" * 80)
 
+# dynamic, but subclass might be preferable way to extend
 kenwood.power = 1.5
 print(kenwood.power)
 # Error as Kettle does not have power and hamilton instance also
 # print(hamilton.power)
 
+print(Kettle.power_source)
+print(kenwood.power_source)
+kenwood.power_source = "fire"
+# Now kenwood got its own data attribute that shadows class attribute
+# Hence will be present in __dict__
+# java wont allow to access/change static variable through instance
+print(kenwood.power_source)
+print("*" * 80)
+
+# dict to get all attributes
+print(Kettle.__dict__)
+print(kenwood.__dict__)
+print(hamilton.__dict__)
