@@ -90,6 +90,7 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+pygames/venv/
 
 # Spyder project settings
 .spyderproject
